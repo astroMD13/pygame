@@ -72,7 +72,8 @@ def guardar_desenho():
 print('=====')        
 print('Paint')
 print('=====')
-print('use "w" "a" e "d" ou arraste para desenhar\nuse tab para a grossura(use só numeros)\nuse shift para mudar a cor\nuse F1 para guardar\n use ctrl+c para parar')
+print('Use "w", "a", and "d" or drag to draw.\n Use tab for thickness (use only numbers).\n Use shift to change color.\n Press F1 to save.\n Use ctrl+c to stop.')
+
 try:
     try:
         janela.listen()
