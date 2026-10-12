@@ -26,7 +26,7 @@ def virar_dire():
 def grossura():
     if keyboard.is_pressed('tab'):
         try:
-            grossu=int(input('Qual a grossura '))
+            grossu=int(input('whats the pen size '))
             t.pensize(grossu)
             t.shapesize(grossu/20)
             return
@@ -37,7 +37,7 @@ def grossura():
 def cor():
     try:
         if keyboard.is_pressed('shift'):
-            cor=str(input('Qual a cor (escreva em inglês) '))
+            cor=str(input('whats the color(write in engish) '))
             t.pencolor(cor)
             t.fillcolor(cor)
     except turtle.TurtleGraphicsError:
@@ -72,7 +72,8 @@ def guardar_desenho():
 print('=====')        
 print('Paint')
 print('=====')
-print('use "w" "a" e "d" ou arraste para desenhar\nuse tab para a grossura(use só numeros)\nuse shift para mudar a cor\nuse F1 para guardar\n use ctrl+c para parar')
+print('Use "w", "a", and "d" or drag to draw.\n Use tab for thickness (use only numbers).\n Use shift to change color.\n Press F1 to save.\n Use ctrl+c to stop.')
+try:
 try:
     try:
         janela.listen()
@@ -94,5 +95,5 @@ try:
         print('Adeus')
         pass        
 except turtle.TurtleGraphicsError:
-    print('use um valor ou cor valida')   
+    print('use a value or a color valid')   
     pass 
